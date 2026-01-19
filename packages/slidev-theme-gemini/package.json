@@ -24,7 +24,11 @@
     }
   },
   "dependencies": {
-    "@slidev/types": "^0.47.0",
+    "@slidev/types": "^52.11.3",
     "@vueuse/motion": "^3.0.3"
+  },
+  "peerDependencies": {
+    "vue": ">=3.5.0",
+    "@slidev/client": ">=0.47.0"
   }
 }

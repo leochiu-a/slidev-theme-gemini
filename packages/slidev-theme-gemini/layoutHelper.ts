@@ -15,8 +15,8 @@ export function handleBackground(background?: string): CSSProperties {
     backgroundImage: isColor
       ? undefined
       : background
-        ? `url("${resolveAssetUrl(background)}")`
-        : undefined,
+      ? `url("${resolveAssetUrl(background)}")`
+      : undefined,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",
