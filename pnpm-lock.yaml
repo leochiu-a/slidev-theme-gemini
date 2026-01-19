@@ -6,7 +6,9 @@ settings:
 
 importers:
 
-  .:
+  .: {}
+
+  packages/slidev-theme-gemini:
     dependencies:
       '@slidev/types':
         specifier: ^0.47.0
