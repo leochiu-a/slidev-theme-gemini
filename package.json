@@ -1,4 +1,7 @@
 {
   "name": "slidev-theme-gemini-workspace",
-  "private": true
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter demo dev"
+  }
 }
