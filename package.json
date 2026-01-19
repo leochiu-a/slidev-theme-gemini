@@ -7,9 +7,21 @@
     "version": "changeset version",
     "release": "changeset publish",
     "format": "pnpm -r format",
-    "lint": "pnpm -r lint"
+    "lint": "pnpm -r lint",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.7"
+    "@changesets/cli": "^2.29.7",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue}": [
+      "pnpm -r lint",
+      "pnpm -r format"
+    ],
+    "**/*.{json,yaml,yml}": [
+      "pnpm -r format"
+    ]
   }
 }
