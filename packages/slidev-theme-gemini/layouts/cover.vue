@@ -39,11 +39,7 @@ onSlideLeave(() => {
 
 <template>
   <div class="slidev-layout gemini-cover cover block content-center">
-    <div
-      ref="backgroundRef"
-      class="gemini-cover__bg"
-      :style="backgroundStyle"
-    />
+    <div ref="backgroundRef" class="gemini-cover__bg" :style="backgroundStyle" />
     <div
       ref="contentRef"
       class="gemini-cover__content relative z-10 flex flex-col items-center justify-center text-center"

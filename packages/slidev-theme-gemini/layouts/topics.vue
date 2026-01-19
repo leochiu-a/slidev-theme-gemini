@@ -22,9 +22,7 @@ const topicsRef = ref<HTMLElement | null>(null);
 const topicElements = computed(() => {
   const container = topicsRef.value;
   if (!container) return null;
-  return Array.from(
-    container.querySelectorAll<HTMLElement>(".gemini-topics__item"),
-  );
+  return Array.from(container.querySelectorAll<HTMLElement>(".gemini-topics__item"));
 });
 
 const iconMap: Record<string, string> = {
@@ -56,11 +54,7 @@ useStaggeredMotion(topicElements, {
         <slot />
       </div>
 
-      <div
-        v-if="topics.length"
-        ref="topicsRef"
-        class="grid grid-cols-1 gap-2.5 md:grid-cols-2"
-      >
+      <div v-if="topics.length" ref="topicsRef" class="grid grid-cols-1 gap-2.5 md:grid-cols-2">
         <div
           v-for="(topic, index) in topics"
           :key="`${topic.title}-${index}`"
@@ -101,13 +95,7 @@ useStaggeredMotion(topicElements, {
           </div>
           <h3
             class="mb-2 text-[13px] font-semibold transition-colors duration-500"
-            :class="
-              revealed
-                ? topic.hot
-                  ? 'text-white'
-                  : 'text-slate-300'
-                : 'text-white'
-            "
+            :class="revealed ? (topic.hot ? 'text-white' : 'text-slate-300') : 'text-white'"
           >
             {{ topic.title }}
           </h3>

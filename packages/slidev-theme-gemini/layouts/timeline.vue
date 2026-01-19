@@ -30,9 +30,7 @@ const timelineDelayBase = computed(() => {
 const timelineElements = computed(() => {
   const container = timelineRef.value;
   if (!container) return null;
-  return Array.from(
-    container.querySelectorAll<HTMLElement>(".gemini-timeline__item"),
-  );
+  return Array.from(container.querySelectorAll<HTMLElement>(".gemini-timeline__item"));
 });
 
 useStaggeredMotion(contentElements, {
@@ -81,11 +79,7 @@ useStaggeredMotion(timelineElements, () => ({
           >
             <div
               class="mb-2 text-xl font-bold"
-              :class="
-                index === timelineItems.length - 1
-                  ? 'text-orange-400'
-                  : 'text-blue-400'
-              "
+              :class="index === timelineItems.length - 1 ? 'text-orange-400' : 'text-blue-400'"
             >
               {{ item.year }}
             </div>
@@ -98,11 +92,7 @@ useStaggeredMotion(timelineElements, () => ({
           </div>
           <div
             class="mt-3 h-4 w-4 rounded-full ring-4 ring-slate-950"
-            :class="
-              index === timelineItems.length - 1
-                ? 'bg-orange-500'
-                : 'bg-blue-500'
-            "
+            :class="index === timelineItems.length - 1 ? 'bg-orange-500' : 'bg-blue-500'"
           />
         </div>
       </div>

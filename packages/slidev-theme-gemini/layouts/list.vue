@@ -56,8 +56,7 @@ const parseListItems = () => {
     parsed.length !== listItems.value.length ||
     parsed.some(
       (item, index) =>
-        item.title !== listItems.value[index]?.title ||
-        item.desc !== listItems.value[index]?.desc,
+        item.title !== listItems.value[index]?.title || item.desc !== listItems.value[index]?.desc,
     );
 
   if (hasChanges) listItems.value = parsed;
@@ -73,9 +72,7 @@ const listElements = computed(() => {
   const container = listRef.value;
   if (!container) return null;
 
-  return Array.from(
-    container.querySelectorAll<HTMLElement>(".gemini-list__item"),
-  );
+  return Array.from(container.querySelectorAll<HTMLElement>(".gemini-list__item"));
 });
 
 const hasParsedItems = computed(() => listItems.value.length > 0);
@@ -93,8 +90,7 @@ const badgeColors = [
     badgeText: "text-blue-400",
   },
 ];
-const getBadgeColors = (index: number) =>
-  badgeColors[index % badgeColors.length];
+const getBadgeColors = (index: number) => badgeColors[index % badgeColors.length];
 
 useStaggeredMotion(contentElements, {
   initialY: 28,
@@ -128,9 +124,7 @@ onMounted(async () => {
 
 <template>
   <div class="slidev-layout gemini-list">
-    <div
-      class="mx-auto flex h-full w-full max-w-5xl flex-col justify-center px-8"
-    >
+    <div class="mx-auto flex h-full w-full max-w-5xl flex-col justify-center px-8">
       <div
         ref="contentRef"
         class="gemini-list__content text-left"
@@ -146,10 +140,7 @@ onMounted(async () => {
         >
           <span
             class="mr-4 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-sm font-semibold"
-            :class="[
-              getBadgeColors(index).badgeBg,
-              getBadgeColors(index).badgeText,
-            ]"
+            :class="[getBadgeColors(index).badgeBg, getBadgeColors(index).badgeText]"
           >
             {{ index + 1 }}
           </span>

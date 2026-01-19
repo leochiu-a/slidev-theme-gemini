@@ -38,9 +38,8 @@ const createStaggeredMotions = (
       }) as MotionControlsLite,
   );
 
-const resolveOptions = (
-  options: StaggeredMotionOptions | StaggeredMotionOptionsGetter,
-) => (typeof options === "function" ? options() : options);
+const resolveOptions = (options: StaggeredMotionOptions | StaggeredMotionOptionsGetter) =>
+  typeof options === "function" ? options() : options;
 
 export function useStaggeredMotion(
   elements: MaybeRefOrGetter<HTMLElement[] | null>,

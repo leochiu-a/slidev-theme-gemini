@@ -36,10 +36,7 @@ useStaggeredMotion(rowElements, () => {
 
 <template>
   <div class="slidev-layout gemini-table">
-    <div
-      ref="contentRef"
-      class="mx-auto flex h-full w-full max-w-6xl flex-col justify-center"
-    >
+    <div ref="contentRef" class="mx-auto flex h-full w-full max-w-6xl flex-col justify-center">
       <div ref="tableRef">
         <slot />
       </div>

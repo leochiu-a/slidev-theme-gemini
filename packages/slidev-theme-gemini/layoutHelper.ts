@@ -7,16 +7,15 @@ export function resolveAssetUrl(url: string) {
 }
 
 export function handleBackground(background?: string): CSSProperties {
-  const isColor =
-    background && ["#", "rgb", "hsl"].some((v) => background.indexOf(v) === 0);
+  const isColor = background && ["#", "rgb", "hsl"].some((v) => background.indexOf(v) === 0);
 
   const style = {
     background: isColor ? background : undefined,
     backgroundImage: isColor
       ? undefined
       : background
-      ? `url("${resolveAssetUrl(background)}")`
-      : undefined,
+        ? `url("${resolveAssetUrl(background)}")`
+        : undefined,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",

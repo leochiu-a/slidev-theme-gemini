@@ -23,9 +23,7 @@ const contentElements = computed(() => {
 const cardElements = computed(() => {
   const container = cardsRef.value;
   if (!container) return null;
-  return Array.from(
-    container.querySelectorAll<HTMLElement>(".gemini-cards__item"),
-  );
+  return Array.from(container.querySelectorAll<HTMLElement>(".gemini-cards__item"));
 });
 const cardColors = [
   {

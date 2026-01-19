@@ -5,7 +5,9 @@
     "dev": "pnpm --filter demo dev",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "format": "pnpm -r format",
+    "lint": "pnpm -r lint"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.7"

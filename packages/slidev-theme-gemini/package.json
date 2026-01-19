@@ -2,12 +2,28 @@
   "name": "slidev-theme-gemini",
   "version": "0.1.0",
   "description": "Gemini theme for Slidev",
-  "author": "",
-  "license": "MIT",
   "keywords": [
-    "slidev-theme",
-    "slidev"
+    "slidev",
+    "slidev-theme"
   ],
+  "license": "MIT",
+  "author": "",
+  "scripts": {
+    "format": "oxfmt --write",
+    "lint": "oxlint"
+  },
+  "dependencies": {
+    "@slidev/types": "^52.11.3",
+    "@vueuse/motion": "^3.0.3"
+  },
+  "devDependencies": {
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:"
+  },
+  "peerDependencies": {
+    "@slidev/client": ">=0.47.0",
+    "vue": ">=3.5.0"
+  },
   "engines": {
     "node": ">=18.0.0",
     "slidev": ">=0.47.0"
@@ -22,13 +38,5 @@
         "weights": "300,400,500,600,700"
       }
     }
-  },
-  "dependencies": {
-    "@slidev/types": "^52.11.3",
-    "@vueuse/motion": "^3.0.3"
-  },
-  "peerDependencies": {
-    "vue": ">=3.5.0",
-    "@slidev/client": ">=0.47.0"
   }
 }
