@@ -2,6 +2,12 @@
   "name": "slidev-theme-gemini-workspace",
   "private": true,
   "scripts": {
-    "dev": "pnpm --filter demo dev"
+    "dev": "pnpm --filter demo dev",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7"
   }
 }
