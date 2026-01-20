@@ -6,8 +6,13 @@
     "slidev",
     "slidev-theme"
   ],
+  "homepage": "https://leochiu-a.github.io/slidev-theme-gemini/",
   "license": "MIT",
-  "author": "",
+  "author": "Leo Chiu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leochiu-a/slidev-theme-gemini"
+  },
   "scripts": {
     "format": "oxfmt --write",
     "lint": "oxlint"
