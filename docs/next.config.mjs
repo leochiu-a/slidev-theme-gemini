@@ -6,6 +6,8 @@ const withMDX = createMDX();
 const config = {
   output: 'export',
   reactStrictMode: true,
+  basePath: '/slidev-theme-gemini',
+  assetPrefix: '/slidev-theme-gemini/',
 };
 
 export default withMDX(config);
