@@ -40,10 +40,15 @@ jobs:
       - name: Build Demo
         run: pnpm --filter demo build -- --base /${{ github.event.repository.name }}/demo/
 
+      - name: Stage Pages content
+        run: |
+          mkdir -p pages/demo
+          cp -R demo/dist/. pages/demo/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: demo/dist
+          path: pages
 
   deploy:
     name: Deploy to GitHub Pages
