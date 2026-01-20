@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build Docs
+    name: Build Docs and Demo
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -42,10 +42,19 @@ jobs:
         env:
           PAGES_BASE_PATH: /${{ github.event.repository.name }}
 
+      - name: Build Demo
+        run: pnpm --filter demo build --base /${{ github.event.repository.name }}/demo/
+
+      - name: Stage Pages content
+        run: |
+          mkdir -p pages/demo
+          cp -R docs/out/. pages/
+          cp -R demo/dist/. pages/demo/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/out
+          path: pages
 
   deploy:
     name: Deploy to GitHub Pages
