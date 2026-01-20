@@ -6,6 +6,8 @@ title: AI Era for JavaScript Developers
 info: |
   ## JSDC 2025
   AI boom and the role of JavaScript developers
+# Use hash routing to avoid GitHub Pages refresh 404s.
+routerMode: hash
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
