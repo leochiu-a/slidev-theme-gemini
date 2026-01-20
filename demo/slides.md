@@ -77,7 +77,7 @@ machine learning on GitHub.
 
 ::right::
 
-![Top languages 2024](/Users/leochiu.chiu/Desktop/jsdc-2025/src/assets/top-programming-language-2024.webp)
+![Top languages 2024](/top-programming-language-2024.webp)
 
 Source: [Octoverse 2024 @ GitHub](https://github.blog/news-insights/octoverse/octoverse-2024/)
 
@@ -294,7 +294,7 @@ privacy, and models work offline after download.
 
 ::right::
 
-![Chrome Built-in AI](/Users/leochiu.chiu/Desktop/jsdc-2025/src/assets/chrome-built-in-ai.png)
+![Chrome Built-in AI](/chrome-built-in-ai.png)
 
 Source: [Chrome for Developers](https://developer.chrome.com/docs/ai/built-in)
 
@@ -315,7 +315,7 @@ entire CLI is 100% TypeScript.
 
 ::right::
 
-![Gemini CLI TypeScript](/Users/leochiu.chiu/Desktop/jsdc-2025/src/assets/gemini-cli-ts.png)
+![Gemini CLI TypeScript](/gemini-cli-ts.png)
 
 <style>
 .two-cols-header {
@@ -342,7 +342,7 @@ AI node system, is 100% TypeScript.
 
 ::right::
 
-![n8n TypeScript](/Users/leochiu.chiu/Desktop/jsdc-2025/src/assets/n8n.png)
+![n8n TypeScript](/n8n.png)
 
 Source: [n8n on GitHub](https://github.com/n8n-io/n8n)
 
@@ -370,7 +370,7 @@ the core engine, API, and web UI are built with TypeScript and Next.js.
 
 ::right::
 
-![Langfuse TypeScript](/Users/leochiu.chiu/Desktop/jsdc-2025/src/assets/langfuse-ts.png)
+![Langfuse TypeScript](/langfuse-ts.png)
 
 Source: [Langfuse on GitHub](https://github.com/langfuse/langfuse)
 
@@ -397,7 +397,7 @@ in a decade.
 
 ::right::
 
-![Top languages 2025](/Users/leochiu.chiu/Desktop/jsdc-2025/src/assets/octoverse-2025-top-programming-languages.webp)
+![Top languages 2025](/octoverse-2025-top-programming-languages.webp)
 
 Source: [GitHub Octoverse 2025](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/)
 
