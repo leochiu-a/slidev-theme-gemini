@@ -1,5 +1,7 @@
 # Slidev Theme Gemini
 
+![](/docs/public/cover.webp)
+
 A Slidev theme inspired by cinematic cover layouts, dramatic typography, and staged motion.
 
 - Docs: https://leochiu-a.github.io/slidev-theme-gemini/
