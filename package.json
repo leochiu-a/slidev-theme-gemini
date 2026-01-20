@@ -9,7 +9,8 @@
     "format": "pnpm -r format",
     "lint": "pnpm -r lint",
     "prepare": "husky",
-    "docs:dev": "pnpm --filter docs dev"
+    "docs:dev": "pnpm --filter docs dev",
+    "docs:build": "pnpm --filter docs build"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.7",
