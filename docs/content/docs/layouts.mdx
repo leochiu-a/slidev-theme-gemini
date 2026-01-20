@@ -1,0 +1,153 @@
+---
+title: Layouts
+description: Theme layouts and their configuration.
+---
+
+Gemini ships with a set of opinionated layouts tuned for presentation pacing and clarity.
+
+## cover
+
+A cinematic hero layout with a layered background treatment.
+
+```yaml
+---
+layout: cover
+background: /images/cover.jpg
+---
+
+# Gemini Session
+
+## AI Momentum
+```
+
+## default
+
+The default layout wraps content in staggered motion and uses the core theme typography.
+
+```md
+---
+layout: default
+---
+
+# Section Title
+
+A short paragraph to set context.
+```
+
+## two-cols-header
+
+Header plus two columns, ideal for comparisons or visual/text splits.
+
+```md
+---
+layout: two-cols-header
+---
+
+# Anxiety you cannot ignore
+
+::left::
+
+Left column content.
+
+::right::
+
+Right column content.
+```
+
+## cards
+
+A grid of cards defined in frontmatter.
+
+```yaml
+---
+layout: cards
+cards:
+  - title: Prompting
+    desc: Use Gemini or ChatGPT to boost daily work.
+    tags: ["prompt", "workflow"]
+  - title: Apps
+    desc: Build AI-driven user experiences.
+    tags: ["RAG", "agents"]
+---
+
+# What is hot?
+
+Use short descriptions.
+```
+
+## topics
+
+A grid of topics with badges, audience, and optional highlights.
+
+```yaml
+---
+layout: topics
+topics:
+  - title: Build LLMs
+    desc: Train models and tune parameters.
+    audience: Researchers
+    hot: false
+    icon: brain
+  - title: Build AI apps
+    desc: RAG, chatbots, and workflows.
+    audience: Builders
+    hot: true
+    hotLabel: High demand
+    icon: code
+---
+
+# Topics
+```
+
+Available icons: `brain`, `sparkles`, `terminal`, `code`.
+
+## timeline
+
+A vertical rhythm with year cards.
+
+```yaml
+---
+layout: timeline
+timeline:
+  - year: "2012"
+    event: AlexNet
+    desc: Trigger for computer vision.
+  - year: "2022"
+    event: ChatGPT
+    desc: The iPhone moment for AI.
+---
+
+# Milestones
+```
+
+## list
+
+Use a Markdown list; Gemini will restyle it into numbered badges.
+
+```md
+---
+layout: list
+---
+
+# Steps
+
+- `Identify the user` — Get the core intent.
+- `Plan the flow` — Outline the talk arc.
+- `Design the visuals` — Keep them sparse and bold.
+```
+
+## table
+
+A Markdown table with styled headers and status pills.
+
+```md
+---
+layout: table
+---
+
+| Topic | Level | Status |
+| --- | --- | --- |
+| Prompting | Basic | `ready` |
+| RAG | Intermediate | `active` |
+| Agents | Advanced | `beta` |
+```

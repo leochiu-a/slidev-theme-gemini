@@ -1,6 +1,7 @@
 packages:
   - "packages/*"
   - "demo"
+  - "docs"
 
 catalog:
   oxfmt: ^0.25.0

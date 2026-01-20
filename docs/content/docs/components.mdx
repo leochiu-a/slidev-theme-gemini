@@ -1,0 +1,31 @@
+---
+title: Components
+description: Reusable motion and layout helpers.
+---
+
+## StaggeredGroup
+
+`StaggeredGroup` applies staggered entrance motion to its direct children.
+It is used by several Gemini layouts and can also be used in your own slides.
+
+```md
+<StaggeredGroup :base-delay="150" :step="120">
+
+# Headline
+
+A short supporting line.
+
+</StaggeredGroup>
+```
+
+### Props
+
+- `initialY` (number, default: `24`) - Initial Y offset in pixels.
+- `baseDelay` (number, default: `0`) - Delay before the first item starts.
+- `step` (number, default: `150`) - Delay added between items.
+
+## Motion behavior
+
+Gemini uses staggered motion heavily. If you need to sync animations with other
+content, group related elements under the same `StaggeredGroup` and adjust the
+`baseDelay` to align with surrounding layouts.

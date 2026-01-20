@@ -1,0 +1,79 @@
+---
+title: Getting started
+description: Install the theme and start building cinematic decks.
+---
+
+Slidev Theme Gemini is a presentation theme that leans into cinematic covers, dramatic typography, and staged motion.
+It is designed for talk decks that need a strong visual rhythm and clear sectioning.
+
+## What you get
+
+- Cinematic cover layout with layered background treatments.
+- Opinionated layouts for cards, timelines, tables, and topic grids.
+- Staggered entrance motion, tuned for talk pacing.
+- A consistent color system and typography scale.
+
+## Quick start
+
+```bash
+pnpm add -D slidev-theme-gemini
+```
+
+In your `slides.md`:
+
+```yaml
+---
+theme: gemini
+---
+```
+
+## Getting started
+
+### Recommended frontmatter
+
+These options pair well with the Gemini layout styles:
+
+```yaml
+---
+theme: gemini
+layout: cover
+transition: slide-left
+mdc: true
+---
+```
+
+### Cover example
+
+```yaml
+---
+layout: cover
+background: /cover.jpg
+---
+
+# Gemini Session
+
+## AI Momentum
+
+Where JavaScript Fits
+```
+
+The `background` prop is a layout option for the cover layout.
+
+### Local preview
+
+```bash
+pnpm slidev
+```
+
+### Build
+
+```bash
+pnpm slidev build
+```
+
+## Explore
+
+<Cards>
+  <Card title="Layouts" href="/docs/layouts" />
+  <Card title="Components" href="/docs/components" />
+</Cards>
