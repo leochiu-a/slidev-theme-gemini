@@ -38,7 +38,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build Demo
-        run: pnpm --filter demo build -- --base /${{ github.event.repository.name }}/demo/
+        run: pnpm --filter demo build --base /${{ github.event.repository.name }}/demo/
 
       - name: Stage Pages content
         run: |
