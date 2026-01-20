@@ -39,4 +39,4 @@ pnpm --filter docs dev
 
 ## Inspiration
 
-Special thanks to @pjchender for the fantastic JSDC 2025 talk. The deck was genuinely impressive, and `slidev-theme-gemini` is inspired by that presentation.
+Special thanks to [@pjchender](https://github.com/pjchender) for the fantastic JSDC 2025 talk. The deck was genuinely impressive, and `slidev-theme-gemini` is inspired by that presentation.
