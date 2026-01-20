@@ -2,12 +2,20 @@
 title: Layouts
 description: Theme layouts and their configuration.
 ---
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
 Gemini ships with a set of opinionated layouts tuned for presentation pacing and clarity.
 
 ## cover
 
 A cinematic hero layout with a layered background treatment.
+
+
+<Accordions type="single">
+  <Accordion title="demo">
+    ![Cover layout](/cover.webp)
+  </Accordion>
+</Accordions>
 
 ```yaml
 ---
@@ -38,6 +46,12 @@ A short paragraph to set context.
 
 Header plus two columns, ideal for comparisons or visual/text splits.
 
+<Accordions type="single">
+  <Accordion title="demo">
+    ![Two columns header layout](/two-cols-header.webp)
+  </Accordion>
+</Accordions>
+
 ```md
 ---
 layout: two-cols-header
@@ -57,6 +71,12 @@ Right column content.
 ## cards
 
 A grid of cards defined in frontmatter.
+
+<Accordions type="single">
+  <Accordion title="demo">
+    ![Cards layout](/cards.webp)
+  </Accordion>
+</Accordions>
 
 ```yaml
 ---
@@ -78,6 +98,12 @@ Use short descriptions.
 ## topics
 
 A grid of topics with badges, audience, and optional highlights.
+
+<Accordions type="single">
+  <Accordion title="demo">
+    ![Topics layout](/topics.webp)
+  </Accordion>
+</Accordions>
 
 ```yaml
 ---
@@ -105,6 +131,12 @@ Available icons: `brain`, `sparkles`, `terminal`, `code`.
 
 A vertical rhythm with year cards.
 
+<Accordions type="single">
+  <Accordion title="demo">
+    ![Timeline layout](/timeline.webp)
+  </Accordion>
+</Accordions>
+
 ```yaml
 ---
 layout: timeline
@@ -122,7 +154,13 @@ timeline:
 
 ## list
 
-Use a Markdown list; Gemini will restyle it into numbered badges.
+Just use a Markdown list (-), Gemini will automatically select the `<li>` elements on the page and restyle them with numbered badges.
+
+<Accordions type="single">
+  <Accordion title="demo">
+    ![List layout](/list.webp)
+  </Accordion>
+</Accordions>
 
 ```md
 ---
@@ -139,6 +177,12 @@ layout: list
 ## table
 
 A Markdown table with styled headers and status pills.
+
+<Accordions type="single">
+  <Accordion title="demo">
+    ![Table layout](/table.webp)
+  </Accordion>
+</Accordions>
 
 ```md
 ---
