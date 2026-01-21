@@ -6,5 +6,6 @@ export function baseOptions(): BaseLayoutProps {
       title: "Slidev Theme Gemini",
       url: "/docs",
     },
+    githubUrl: "https://github.com/leochiu-a/slidev-theme-gemini",
   };
 }
